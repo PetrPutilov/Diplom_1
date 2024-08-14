@@ -95,5 +95,6 @@ public class BurgerTest {
 
         Assert.assertNotNull(burger.getReceipt());
         Assert.assertFalse(burger.getReceipt().isEmpty());
+        Assert.assertEquals(burger.getReceipt(), "(==== bun ====)\n" + "= filling cutlet =\n" + "(==== bun ====)\n" + "\n" + "Price: 7.000000\n");
     }
 }
